@@ -1,0 +1,209 @@
+/* These settings apply to the ENTIRE site; also, DO NOT use "display: flex;" in the first two sections, as that will mess everything up */
+
+:root {
+    --maincolor-1: oldlace;
+    --maincolor-2: #000000;
+    --maincolor-3: #000000;
+    --maincolor-4: #000000;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  html {
+    box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  /* Do reduce the font size for smaller displays, but try not to reduce it too much */
+  
+  @media (max-width: 750px) {
+    html {
+      font-size: 90%;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    html {
+      font-size: 75%;
+    }
+  }
+  
+  body {
+    font-family: 'Verdana', sans-serif;
+    font-weight: normal;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    text-align: left;
+    margin-right: 16px;
+  }
+
+  button {
+    display: flex;
+  }
+
+/* The images should display across on a monitor or a tablet in landscape orientation, but for a smartphone or a tablet in portrait orientation, they should switch to single-column view */
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  /* Make sure to test out the revisions and enhancements to the navbar so that they do not interfere with movement or the proper dislaying of text */
+  
+  .nav {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  @media (max-width: 650px) {
+    .nav{
+      justify-content: center;
+    }
+  }
+
+  .nav a:hover {
+    background: white;
+    color: brown;
+  }
+  
+  /* See how you can make the buttons stand out from the rest of the site without "sticking out like a sore thumb" */
+  
+  
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+    padding-top: 10vh;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+    padding-top: 10vh;
+  }
+
+  .values-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+    padding-top: 10vh;
+  }
+
+  .education-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+    padding-top: 10vh;
+  }
+
+  .education-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    width: 100%;
+    padding-top: 10vh;
+  }
+
+  .projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+  }
+
+  @media (max-width: 650px) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  }
+  
+  .project-image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .project-title {
+    width: 100%;
+    font-weight: normal;
+    padding: 2rem 0.5rem;
+  }
+  
+  .contact-button {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .contact-button:hover {
+    color: #345678;
+  }
+  
+  /* Footer should always be at the very bottom of the page */
+  
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    text-align: center;
+    border-top: 10px solid #543298;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  footer a:hover {
+    color: #ABCDEF;
+  }
