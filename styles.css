@@ -1,10 +1,6 @@
-/* These settings apply to the ENTIRE site; also, DO NOT use "display: flex;" in the first two sections, as that will mess everything up */
-
 :root {
     --maincolor-1: oldlace;
-    --maincolor-2: #000000;
-    --maincolor-3: #000000;
-    --maincolor-4: #000000;
+
   }
   
   * {
@@ -82,8 +78,6 @@
     display: block;
     width: 100%;
   }
-
-  /* Make sure to test out the revisions and enhancements to the navbar so that they do not interfere with movement or the proper dislaying of text */
   
   .nav {
     position: fixed;
@@ -104,9 +98,6 @@
     background: white;
     color: brown;
   }
-  
-  /* See how you can make the buttons stand out from the rest of the site without "sticking out like a sore thumb" */
-  
   
   .welcome-section {
     display: flex;
@@ -144,15 +135,6 @@
     padding-top: 10vh;
   }
 
-  .education-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    width: 100%;
-    padding-top: 10vh;
-  }
-
   .projects-section {
     display: flex;
     flex-direction: column;
@@ -172,8 +154,16 @@
   }
   }
   
+  .project-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+
   .project-image {
     width: 100%;
+
     object-fit: cover;
   }
 
@@ -191,8 +181,6 @@
   .contact-button:hover {
     color: #345678;
   }
-  
-  /* Footer should always be at the very bottom of the page */
   
   footer {
     display: flex;
